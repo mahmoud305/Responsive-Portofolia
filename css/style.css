@@ -1,0 +1,349 @@
+ 
+ ::selection {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+body{
+    color: #787878;
+      background-color: #f7f7f7; 
+}
+.popinFont
+{
+    font-family: 'Poppins', sans-serif;
+}
+.sansFont{
+    font-family: 'Source Sans Pro', sans-serif;}
+
+.homeHeader{
+    font-weight: 700;
+    font-size: 100px;
+    margin-top: 20px;
+}
+
+.btn{
+    transition: all 0.5s;
+}
+.btn-color {
+    color: #fff;
+    position: relative;
+    background-color: #00c3da;
+    transition: all 0.5s;
+}
+
+.btn-color:hover {
+    color: white;
+    bottom: 1px !important; 
+    background-color: #06d2e9 !important;
+}
+ 
+.arrowBtns{
+    /* background: linear-gradient(to right ,white);
+    background-position: left bottom; */
+   
+    transition: all 1s ease ;
+}
+.arrowBtns:hover{
+    background-color: white !important;
+     /* background-position: right bottom !important; */
+}
+.arrowBtns:hover .btnSliderIcon{
+    color: black !important;
+}
+.navbar-collapse .navbar-nav .nav-item a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/****************About****************/
+.about{
+    padding: 70px 0px;
+}
+.aboutItem h6{
+    text-transform: uppercase;
+    font-weight: 500 !important;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 0.05em;
+    
+}
+.aboutItem p{
+   font-size: 24px;
+   max-width: 700px;
+   margin: auto;
+   font-weight: lighter;
+}
+.aboutItem p span{
+    font-weight: 500;
+  }
+.aboutItem a{
+font-size: 11px;
+padding:20px 30px ;
+border-width: 1px !important;
+
+}
+.skyColor{
+color: #00c3da !important;
+}
+
+.spaceBetweenSections
+{
+    
+
+}
+
+
+.team{
+    border-top: 1px solid rgba(0,0, 0, 0.2) !important;
+}
+.back_Header{
+    color: white !important;
+    font-size: 5rem;
+    opacity: 0.2;
+}
+
+.front_Header{
+    bottom:0%;
+    color: black !important;
+}
+.teamHeader{
+    margin-top: 60px;
+}
+.teamLayer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 15%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 195, 218, 0.9);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.teamMember{
+    overflow: hidden !important;
+}
+.teamMember:hover .teamLayer{
+opacity: 1;
+top: 0%;
+}
+.teamIcons{
+    font-size: 16px;
+}
+.memberInfo h4{
+    font-size: 15px;
+    color: white;
+
+}
+.memberInfo p{
+    font-size: 12px;
+    color: white;
+}
+
+/******************Services ******************/
+.services{
+    margin: 0px !important ;
+}
+.serviceLayer{
+    /* position: absolute; */
+ 
+    background-color: #1f1f1f;
+    opacity: 0.7;
+}
+.servicesHeaders h4{
+    font-size: 15px !important;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.servicesPargraph .back_Header {
+    color: black;
+    font-weight: 900;
+    font-size: 4rem;
+    opacity: 0.09;  
+}
+.servicesPargraph .front_Header h2{
+    color: white !important;
+    font-size: 38px;
+}
+
+.serviceList ul li {
+    font-size: 16px;
+}
+.serviceList ul li span {
+    font-size: 15px;
+}
+
+
+/**************** pricing **************************/
+
+.pricing{
+    background-color: #f7f7f7;
+    padding: 100px 0px !important;
+    margin: 0px !important;
+}
+.pricing .teamHeader .pricingbackHeader .back_Header{
+    color: #1f1f1f !important;
+    font-weight: bold;
+    opacity: 0.1 !important;
+ }
+
+.pricePlan p{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: #1f1f1f;
+}
+.price{
+    font-size: 55px;
+    color: #1f1f1f;
+
+}
+.price span{
+    font-size: 18px;
+    color: #1f1f1f;
+    
+
+}
+.line{
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    background-color: rgba(0,0, 0, 0.05);
+}
+
+.goldPlan{
+    transform: scaleY(1.1);
+}
+
+.bestPlan{
+    font-size: 10px;
+    margin: 50px !important;
+    background-color: #00c3da;
+    font-weight: 500;
+}
+
+
+/********************* work ************/
+.workCaption p{
+    color: #787878;
+    line-height: 1.5;
+    padding: 30px ;
+}
+.workButton{
+   width: auto;
+   height: auto;
+    /* background-color: red !important; */
+}
+.LeftworkArrows ,.RightworkArrows{
+    color:#787878;
+    position: relative;
+    transition: all 0.5s;
+}
+.LeftworkArrows:hover{
+    color: #00c3da !important;
+    right: 5px !important;
+}
+
+.RightworkArrows:hover{
+    color: #00c3da !important;
+
+    left: 5px !important;
+}
+
+.workCircularButtons{
+    padding: 5px !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #787878 !important;
+}
+
+.circularWorkButtonsContainer .active{
+    background-color: #00c3da !important;
+}
+
+
+/*****************Contact***************/
+.contact{
+    height: 70vh;
+}
+.contactOpacity{
+    color: #1f1f1f !important;
+    font-weight: bold;
+    opacity: 0.1 !important;
+ }
+/**********************      Media Query       ***********************/
+@media screen and (max-width:576px) {
+    .homeHeader{
+        font-size: 40px;   
+    }
+    .homeParagraph{
+        font-size: 16px;
+    }
+    .servicesPargraph .front_Header{
+        left: 50%;
+        transform: translateX(-50%) !important; 
+        
+    }
+    .servicesPargraph .front_Header h2{
+        color: white !important;
+        font-size: 30px;
+    }
+
+    .goldPlan{
+        transform: scaleY(1);
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:577px)  {
+    .homeHeader{
+        font-size: 50px;   
+    }
+    .homeParagraph{
+        font-size: 17.5px;
+    }
+    .servicesPargraph .front_Header{
+        left: 50%;
+        transform: translateX(-50%) !important; 
+    }
+    .servicesPargraph .front_Header h2{
+        color: white !important;
+        font-size: 32px;
+    }
+    .goldPlan{
+        transform: scaleY(1);
+    }
+}
+
+
+@media screen and (max-width:992px) and (min-width:769px)  {
+    .homeHeader{
+        font-size: 80px;   
+    }
+    .homeParagraph{
+        font-size: 19px;
+    }
+
+    .servicesPargraph .front_Header{
+        left: 50% !important;
+       transform: translateX(-50%) !important; 
+    }
+    .goldPlan{
+        transform: scaleY(1);
+    }
+}
+
+
+@media screen and (max-width:1200px) and (min-width:993px)  {
+    .servicesPargraph .front_Header{
+        left: 50% !important;
+       transform: translateX(-50%) !important; 
+    }
+}
+
+
+@media screen and(max-width:1400px) and (min-width:1201px)  {
+    /* .servicesPargraph .front_Header{
+        left: 50%;
+       transform: translateX(-50%) !important; 
+    } */
+}
