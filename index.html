@@ -21,10 +21,10 @@
 </head>
 
 <body>
-  <section class="homePage bg-danger ">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-3">
+  <section class="homePage ">
+    <nav id="myNav" class="myNavBar navbar navbar-expand-lg   fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/logo-dark.png " class="w-50" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="images/logo-light.png " class="w-50" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item  ">
               <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item">
@@ -198,10 +198,10 @@
 
   <section class="team bg-white spaceBetweenSections" id="Team">
     <div class=" teamHeader text-center">
-      <div class=" position-relative ">
+      <div class=" position-relative  teamTemp">
         <h2 class="back_Header text-uppercase  popinFont"> C</h2>
-
-        <div class="front_Header position-absolute start-50 translate-middle-x  text-center">
+        <!--  d-flex align-items-center-->
+        <div class="front_Header position-absolute  start-50 translate-middle-x  text-center">
           <h2 class="fw-bolder fs-1 popinFont ">Creative Team </h2>
         </div>
 
@@ -579,6 +579,7 @@
         <textarea id="message" name="w3review" style="resize: none;" class= "form-control mb-2" cols="4">
           </textarea>
 
+          <button class="btn btn-color position-static  fw-bold mt-3">Send Message </button>
       </div>
       </div>
 
@@ -588,7 +589,9 @@
   </div>
   </section>
   <!-- <section class="test vh-100 bg-warning "></section> -->
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

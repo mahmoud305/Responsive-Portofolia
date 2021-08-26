@@ -19,7 +19,10 @@ body{
     font-size: 100px;
     margin-top: 20px;
 }
-
+#myNav{
+     box-shadow: 5px 0px 10px rgba(0,0, 0, 0.5);
+     padding: 15px;
+}
 .btn{
     transition: all 0.5s;
 }
@@ -52,6 +55,10 @@ body{
 .navbar-collapse .navbar-nav .nav-item a{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    color: white;
+}
+.navbar-collapse .navbar-nav .nav-item .active{
+    color:rgb(82, 79, 79)
 }
 
 /****************About****************/
@@ -96,9 +103,10 @@ color: #00c3da !important;
     border-top: 1px solid rgba(0,0, 0, 0.2) !important;
 }
 .back_Header{
-    color: white !important;
+    color: black !important;
     font-size: 5rem;
-    opacity: 0.2;
+    opacity: 0.1;
+    font-weight: 900;
 }
 
 .front_Header{
@@ -157,9 +165,9 @@ top: 0%;
 }
 
 .servicesPargraph .back_Header {
-    color: black;
-    font-weight: 900;
-    font-size: 4rem;
+  
+    
+     
     opacity: 0.09;  
 }
 .servicesPargraph .front_Header h2{
