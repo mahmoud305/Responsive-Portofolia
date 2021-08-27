@@ -17,10 +17,34 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap"
     rel="stylesheet">
 
-    <title>Mahmoud Abo-Hgr</title>
+  <title>Mahmoud Abo-Hgr</title>
 </head>
 
 <body>
+  <div id="loadingScreen">
+    <div class="lds-heart">
+      <div></div>
+    </div>
+  </div>
+  <button id="upButton" class="btn text-white rounded-circle p-1 position-fixed "> <i
+      class="fa-2x fa fa-arrow-alt-circle-up"> </i> </button>
+
+  <section id="colorBoxContainer" class="ps-0 clearfix">
+    <div id="colorBox">
+      <h4>Choose Your Color : </h4>
+      <div class="d-flex  justify-content-around">
+        <div class="colorItem " style="background-color:rgb(2, 117, 216) ;"></div>
+        <div class="colorItem" style="background-color:rgb(92, 184, 92) ;"></div>
+        <div class="colorItem" style="background-color:	#787878 ;"></div>
+        <div class="colorItem" style="background-color:	rgb(240, 173, 78) ;"></div>
+        <div class="colorItem" style="background-color: rgb(217, 83, 79);"></div>
+        <div class="colorItem" style="background-color: black;"></div>
+      </div>
+    </div>
+    <i class="fa fa-cog " id="colorChangerIcon"></i>
+
+  </section>
+
   <section class="homePage ">
     <nav id="myNav" class="myNavBar navbar navbar-expand-lg   fixed-top">
       <div class="container">
@@ -31,8 +55,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item active">
+              <a class="nav-link " aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item  ">
               <a class="nav-link" href="#About">About</a>
@@ -182,7 +206,7 @@
       <div class="row">
         <div class="col-md-8 offset-md-2 ">
           <div class="AboutItem text-center py-4">
-            <h6>WHo we are</h6>
+            <h6 class="changeColor">WHo we are</h6>
             <p class="my-4 sansFont">We are an innovative company. We develop and design <span class="skyColor">
                 websites </span>for<br>
               costumers around the world. Our clients are some of the most forward-looking companies in the world.</p>
@@ -206,7 +230,7 @@
         </div>
 
       </div>
-      <h4 class="fs-5 fw-normal">We are digital thinkers</h4>
+      <h4 class="fs-5 fw-normal changeColor">We are digital thinkers</h4>
     </div>
 
     <div class="container p-xl-5">
@@ -317,7 +341,7 @@
             <div class="servicesPargraph position-relative text-center text-xl-start">
               <div class="back_Header">W</div>
               <div class="front_Header position-absolute bottom-0  text-white popinFont text-center">
-                <h2 class="text-center">What We Do.</h2>
+                <h2 class="text-center changeColor">What We Do.</h2>
               </div>
             </div>
 
@@ -386,7 +410,7 @@
         </div>
 
       </div>
-      <h4 class="fs-5 fw-normal">We provide the best quality.</h4>
+      <h4 class="fs-5 fw-normal changeColor">We provide the best quality.</h4>
     </div>
 
     <div class="container px-5 px-sm-0">
@@ -478,7 +502,7 @@
   </section>
 
   <section id="Work" class="works">
-    <h6 class="text-uppercase text-center text-dark">HAPPY CUSTOMERS</h6>
+    <h6 class="text-uppercase text-center  changeColor">HAPPY CUSTOMERS</h6>
     <div class="container p-5">
 
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -491,7 +515,7 @@
                     src="images/testimonial-1.jpg" class="w-50 rounded-circle" alt=""> </div>
                 <div class="workCaption text-center popinFont py-5">
                   <h4 class="text-dark fw-bold">Marissa Mayer</h4>
-                  <span><small> CEO, Yahoo </small></span>
+                  <span><small class="changeColor"> CEO, Yahoo </small></span>
                   <p class="text-muted sansFont"> Quo rem cumque facere modi beatae. Deleniti nisi, repellat quae
                     aspernatur consequatur
                     consequuntur, fugit asperiores delectus beatae. Quae veniam, quidem cupiditate quia? Ut iste
@@ -508,7 +532,7 @@
                     src="images/testimonial-2.jpg" class="w-50  rounded-circle" alt=""> </div>
                 <div class="workCaption text-center popinFont py-5">
                   <h4 class="text-dark fw-bold ">Mark Zuckerberg</h4>
-                  <span><small> Founder & CEO, Facebook</small></span>
+                  <span><small class="changeColor"> Founder & CEO, Facebook</small></span>
                   <p class="sansFont"> Consectetur adipisicing elit. Perspiciatis aperiam quaerat iure veritatis fugit
                     debitis, repellat aut accusantium culpa ipsum ex ipsa blanditiis recusandae, sit similique, eius
                     assumenda porro pariatur.</p>
@@ -542,52 +566,54 @@
 
 
   <section id="Contact" class="contact vh-100">
-<div class="container w-100 h-100"> 
-    <div class="row w-100 h-100">
-      <div class="col-lg-6">
-        <div class="contactMap w-100 h-100">
-          <iframe class="map w-100 h-100"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10734.42533187814!2d31.164480711131297!3d30.00329520178568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145845df83368b95%3A0xaccb518ac44b252e!2z2YLYp9i52Kkg2YTZhdin2LEg2YTZhNij2YHYsdin2K0!5e0!3m2!1sen!2seg!4v1626368859255!5m2!1sen!2seg"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="container w-100 h-100">
+      <div class="row w-100 h-100">
+        <div class="col-lg-6">
+          <div class="contactMap w-100 h-100">
+            <iframe class="map w-100 h-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10734.42533187814!2d31.164480711131297!3d30.00329520178568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145845df83368b95%3A0xaccb518ac44b252e!2z2YLYp9i52Kkg2YTZhdin2LEg2YTZhNij2YHYsdin2K0!5e0!3m2!1sen!2seg!4v1626368859255!5m2!1sen!2seg"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-        </div>
-      </div>
-      <div class="col-lg-6 bg-white">
-        <div class="container"> 
-        <div class=" my-5 p-lg-5">
-          <div class= "position-relative ">
-            <h2 class="back_Header contactOpacity text-uppercase  popinFont"> G</h2>
-    
-            <div class="front_Header position-absolute   text-center">
-              <h2 class="fw-bolder fs-1 popinFont ">Get In Touch</h2>
-            </div>
-    
           </div>
-          <h4 class="fs-6 fw-normal">Let's work together.</h4>
         </div>
-        <div class="formDetails p-lg-5"> 
-        <label for="name " class="text-dark p-1">Your Name</label>
-        <input type="text" id="name" class="form-control mb-2">
-      
-        <label for="email" class="text-dark p-1">Your Email</label>
-        <input type="text" id="email" class="form-control mb-2">
-        
-        <label for="phone" class="text-dark p-1">Phone Number </label>
-        <input type="text" id="phone"  class="form-control mb-2">
-        
-        <label for="message" class="text-dark  p-1">Your Message</label>
-        <textarea id="message" name="w3review" style="resize: none;" class= "form-control mb-2" cols="4">
+        <div class="col-lg-6 bg-white">
+          <div class="container">
+            <div class=" my-5 p-lg-5">
+              <div class="position-relative ">
+                <h2 class="back_Header contactOpacity text-uppercase  popinFont"> G</h2>
+
+                <div class="front_Header position-absolute   text-center">
+                  <h2 class="fw-bolder fs-1 popinFont ">Get In Touch</h2>
+                </div>
+
+              </div>
+              <h4 class="fs-6 fw-normal changeColor">Let's work together.</h4>
+            </div>
+            <div class="formDetails p-lg-5">
+              <label for="name " class="text-dark p-1">Your Name</label>
+              <input type="text" id="name" class="form-control mb-2">
+
+              <label for="email" class="text-dark p-1">Your Email</label>
+              <input type="text" id="email" class="form-control mb-2">
+
+              <label for="phone" class="text-dark p-1">Phone Number </label>
+              <input type="text" id="phone" class="form-control mb-2">
+
+              <label for="message" class="text-dark  p-1">Your Message</label>
+              <textarea id="message" name="w3review" style="resize: none;" class="form-control mb-2" cols="4">
           </textarea>
 
-          <button class="btn btn-color position-static  fw-bold mt-3">Send Message </button>
-      </div>
-      </div>
+              <button class="btn btn-color position-static  fw-bold mt-3">Send Message </button>
+            </div>
+          </div>
+
+        </div>
 
       </div>
-
     </div>
-  </div>
   </section>
+
+
   <!-- <section class="test vh-100 bg-warning "></section> -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
