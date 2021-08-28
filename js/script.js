@@ -104,19 +104,40 @@ $(".nav-link").click(function(e){
    $("html,body").animate({scrollTop:nextpostion} , 3000);    
 
 })
+ let colorBoxWidth=$("#colorBox").innerWidth();
+$("#colorBoxContainer").css("left", `-${colorBoxWidth}`);
 
 $("#colorChangerIcon").click(function(){
-   let colorBoxWidth=$("#colorBox").innerWidth();
    // alert(colorBoxWidth);
    if($("#colorBoxContainer").css("left") == '0px'){   
    $("#colorBoxContainer").animate({left:`-${colorBoxWidth}`},1000)
 }else
-   $("#colorBoxContainer").animate({left:`0px`},1000)
+   $("#colorBoxContainer").animate({left:`0px`},1000);
 })
 
 $(".colorItem").click(function () {
    let newColor=$(this).css("backgroundColor");
    $(".changeColor").css("color",newColor);
  })
+/* msh sh8'ala lehhhhhhhhhhhhh koise*/ 
+ var typed = new Typed('.element', {
+    strings: ["",'websites ', 'softwares ','apps '],
+    startDelay:-20,
+    loop: true,
+    typeSpeed: 100 ,//typeSpeed type speed in milliseconds
+    startDelay: 0,
+    backSpeed: 100,// backSpeed backspacing speed in milliseconds
+    backDelay: 1000,
+    // onComplete: (self) => {startDelay:0},
+    // onBegin: (self) => {strings["websites"],startDelay:0}
+
+    /* /**
+   * All typing is complete
+   * @param {Typed} self//// -Typed- what odes it means.
+   */
+  //onComplete: (self) => {},
+   
+  });
+
 
   });
